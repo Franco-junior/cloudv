@@ -18,8 +18,30 @@ sudo snap install maas --channel=3.5/stable
 sudo snap install maas-test-db
 ```
 
+### Tarefa 2: Acessando e configurando o MaaS
 Ainda conectado a máquina local pelo cabo Ethernet podemos acessar a máquina main através da nossa máquina pessoal utilizando o SSH:
 
 ```
 ssh cloud@172.16.0.3
 ```
+![](imagens/imagem_2025-03-12_185422999.png)
+
+- Inicializando o MaaS
+
+```
+sudo maas init region+rack --maas-url http://172.16.0.3:5240/MAAS --database-uri maas-test-db:///
+sudo maas createadmin
+```
+
+Nessa parte devemos criar um login e uma senha. Pelo padrão da disciplina iremos criar o admin como "cloud" e a senha "cloud"+"letra do Kit", neste caso "cloudv"
+
+
+- Gerando o par de chaves para autenticação
+  
+Em seguida, precisamos gerar as chaves para autenticar através do comando:
+
+```
+ssh-keygen -t rsa
+```
+
+Gerando a chave, devemos copiar e guardar em uma pasta 

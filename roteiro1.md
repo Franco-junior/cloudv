@@ -44,4 +44,15 @@ Em seguida, precisamos gerar as chaves para autenticar através do comando:
 ssh-keygen -t rsa
 ```
 
-Gerando a chave, devemos copiar e guardar em uma pasta 
+![](imagens/imagem_2025-03-12_194200944.png)
+
+Gerando a chave, devemos copiar e guardar em uma pasta: 
+
+
+```
+cat ./.ssh/id_rsa.pub
+```
+
+- Acessando o dashboard do MaaS
+
+Após esses passos é possível acessar o dashboard do MaaS para dar sequência as outras configurações necessárias através do link [http://172.16.0.3:5240/MAAS](http://172.16.0.3:5240/MAAS)

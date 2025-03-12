@@ -56,3 +56,8 @@ cat ./.ssh/id_rsa.pub
 - Acessando o dashboard do MaaS
 
 Após esses passos é possível acessar o dashboard do MaaS para dar sequência as outras configurações necessárias através do link [http://172.16.0.3:5240/MAAS](http://172.16.0.3:5240/MAAS)
+
+Agora precisamos configurar o DNS forwarder com o DNS do Insper. Para isso precisamos acessar a aba Settings/Network/DNS do dashboard:
+
+![](imagens/imagem_2025-03-12_201158884.png)
+

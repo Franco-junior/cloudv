@@ -69,3 +69,9 @@ Em seguida devemos definir o Global Kernel Parameters
 
 Nessa etapa precisamos habilitar o DHCP no MaaS Controller, definindo o range de IPs iniciar em 172.16.11.1 e acabar em 172.16.14.255. Além disso, tem que deixar o DNS da subnet apontando para o DNS do Insper.
 
+![](imagens/imagem_2025-03-13_025508252.png)
+
+### Tarefa 4: Checando a saúde do Maas
+
+Dentro do dashboard, na aba de Controladores, é possível checar a "saúde" do sistema Maas. Nessa página deve haver uma marca de seleção verde ao lado dos itens 'regiond' até 'dhcpd':
+

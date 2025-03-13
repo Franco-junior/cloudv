@@ -61,3 +61,11 @@ Agora precisamos configurar o DNS forwarder com o DNS do Insper. Para isso preci
 
 ![](imagens/imagem_2025-03-12_201158884.png)
 
+Agora vamos importar as imagens do Ubuntu 22 e 24 no dashboard.
+
+Em seguida devemos definir o Global Kernel Parameters
+
+### Tarefa 3: Chaveando o DHCP
+
+Nessa etapa precisamos habilitar o DHCP no MaaS Controller, definindo o range de IPs iniciar em 172.16.11.1 e acabar em 172.16.14.255. Além disso, tem que deixar o DNS da subnet apontando para o DNS do Insper.
+

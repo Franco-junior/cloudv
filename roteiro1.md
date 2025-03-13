@@ -75,3 +75,4 @@ Nessa etapa precisamos habilitar o DHCP no MaaS Controller, definindo o range de
 
 Dentro do dashboard, na aba de Controladores, é possível checar a "saúde" do sistema Maas. Nessa página deve haver uma marca de seleção verde ao lado dos itens 'regiond' até 'dhcpd':
 
+![(imagens/imagem_2025-03-13_025825254.png)]

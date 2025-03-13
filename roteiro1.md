@@ -63,6 +63,8 @@ Agora precisamos configurar o DNS forwarder com o DNS do Insper. Para isso preci
 
 Agora vamos importar as imagens do Ubuntu 22 e 24 no dashboard.
 
+![](imagens/imagem_2025-03-13_194540009.png)
+
 Em seguida devemos definir o Global Kernel Parameters
 
 ### Tarefa 3: Chaveando o DHCP

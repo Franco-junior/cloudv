@@ -61,11 +61,13 @@ Agora precisamos configurar o DNS forwarder com o DNS do Insper. Para isso preci
 
 ![](imagens/imagem_2025-03-12_201158884.png)
 
-Agora vamos importar as imagens do Ubuntu 22 e 24 no dashboard.
+Agora vamos importar as imagens do Ubuntu 22 e 24 no dashboard:
 
 ![](imagens/imagem_2025-03-13_194540009.png)
 
-Em seguida devemos definir o Global Kernel Parameters
+Em seguida devemos definir o Global Kernel Parameters:
+
+![](imagens/imagem_2025-03-13_211926729.png)
 
 ### Tarefa 3: Chaveando o DHCP
 
@@ -82,4 +84,15 @@ Dentro do dashboard, na aba de Controladores, é possível checar a "saúde" do 
 
 ### Tarefa 5: Comissionando os servidores
 
-Agora é o momento de cadastrar (fazer o host) de todas as máquinas do server1 até o server5.
+Agora é o momento de cadastrar (fazer o host) de todas as máquinas do server1 até o server5. Para isso algumas instruções devem ser seguidas:
+
+- Ao cadastrar as máquinas devemos preencher as opções:
+   - Preencher a opção Power Type com Intel AMT
+   - Inserir MacAddress da máquina respectiva, esse valor está escrito em cada máquina na parte de baixo
+   - Inserir a senha como _CloudComp6s!_
+   - IP do AMT = 172.16.15.X (sendo X o id do server, por exemplo server1 = 172.16.15.1)
+
+Em seguida, devemos checar todos os nós e verificar se estão todos com o status Ready, além de verificar também o hardware como memória, SSD etc.
+
+Ainda resta um último dispositivo para cadastrar, neste caso o roteador. Adicionamos o roteador pela aba Devices do dashboard do MaaS:
+

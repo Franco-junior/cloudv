@@ -104,7 +104,7 @@ Ainda resta um último dispositivo para cadastrar, neste caso o roteador. Adicio
 
 Uma Open vSwitch (OVS) bridge reduz a necessidade de duas interfaces de rede físicas. As pontes OVS são criadas na aba NetWork ao configurar um nó (machine). Aqui, vamos criar uma ponte a partir da interface regular 'eth0'. O nome da ponte vai ser referenciado em outras partes e como exigência da disciplina iremos chamar de 'br-ex':
 
-![](imagens/imagem_2025-03-13_221748429.png)
+![](imagens/imagem_2025-03-13_222218139.png)
 
 Devemos fazer esse procedimento para cada uma das machines da nossa nuvem.
 

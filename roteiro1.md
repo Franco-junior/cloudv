@@ -98,3 +98,8 @@ Em seguida, devemos checar todos os nós e verificar se estão todos com o statu
 
 Ainda resta um último dispositivo para cadastrar, neste caso o roteador. Adicionamos o roteador pela aba Devices do dashboard do MaaS:
 
+![](imagens/imagem_2025-03-13_221051007.png)
+
+### Tarefa 5: Criando OVS bridge
+
+Uma Open vSwitch (OVS) bridge reduz a necessidade de duas interfaces de rede físicas. As pontes OVS são criadas na aba NetWork ao configurar um nó (machine). Aqui, vamos criar uma ponte a partir da interface regular 'eth0'. O nome da ponte vai ser referenciado em outras partes e como exigência da disciplina iremos chamar de 'br-ex'

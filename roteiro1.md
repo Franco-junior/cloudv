@@ -98,7 +98,7 @@ Em seguida, devemos checar todos os nós e verificar se estão todos com o statu
 
 Ainda resta um último dispositivo para cadastrar, neste caso o roteador. Adicionamos o roteador pela aba Devices do dashboard do MaaS:
 
-![](imagens/imagem_2025-03-13_221051007.png)
+![](imagens/imagem_2025-03-13_222310675.png)
 
 ### Tarefa 5: Criando OVS bridge
 
@@ -110,4 +110,10 @@ Devemos fazer esse procedimento para cada uma das machines da nossa nuvem.
 
 ### Tarefa 6: Fazendo acesso remoto ao kit
 
-Agora vamos realizar um NAT para permitir o acesso externo "Rede Wi-fi Insper" do computador pessoal ao servidor MAIN, a ideia é utilizar a porta 22. Também é necessário liberar o acesso ao gerenciamento remoto do roteador criando uma regra de gestão para a rede 0.0.0.0/0
+Agora vamos realizar um NAT para permitir o acesso externo "Rede Wi-fi Insper" do computador pessoal ao servidor MAIN, a ideia é utilizar a porta 22. Além disso, temos que configurar uma porta para acessar o MaaS remotamente, usaremos a porta 5240 e configurar no roteador na aba Transmisson -> NAT:
+
+
+
+Também é necessário liberar o acesso ao gerenciamento remoto do roteador criando uma regra de gestão para a rede 0.0.0.0/0, na aba System Tools -> Admin Setup -> Remote Management:
+
+

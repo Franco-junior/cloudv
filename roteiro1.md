@@ -100,7 +100,7 @@ Ainda resta um último dispositivo para cadastrar, neste caso o roteador. Adicio
 
 ![](imagens/imagem_2025-03-13_222310675.png)
 
-### Tarefa 5: Criando OVS bridge
+### Tarefa 6: Criando OVS bridge
 
 Uma Open vSwitch (OVS) bridge reduz a necessidade de duas interfaces de rede físicas. As pontes OVS são criadas na aba NetWork ao configurar um nó (machine). Aqui, vamos criar uma ponte a partir da interface regular 'eth0'. O nome da ponte vai ser referenciado em outras partes e como exigência da disciplina iremos chamar de 'br-ex':
 
@@ -108,7 +108,7 @@ Uma Open vSwitch (OVS) bridge reduz a necessidade de duas interfaces de rede fí
 
 Devemos fazer esse procedimento para cada uma das machines da nossa nuvem.
 
-### Tarefa 6: Fazendo acesso remoto ao kit
+### Tarefa 7: Fazendo acesso remoto ao kit
 
 Agora vamos realizar um NAT para permitir o acesso da "Rede Wi-fi Insper" do computador pessoal ao servidor MAIN, a ideia é utilizar a porta 22. Além disso, temos que configurar uma porta para acessar o MaaS remotamente, usaremos a porta 5240 e configurar no roteador na aba Transmisson -> NAT:
 

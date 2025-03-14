@@ -84,7 +84,7 @@ Dentro do dashboard, na aba de Controladores, é possível checar a "saúde" do 
 
 ### Tarefa 5: Comissionando os servidores
 
-Agora é o momento de cadastrar (fazer o host) de todas as máquinas do server1 até o server5. Para isso algumas instruções devem ser seguidas:
+Agora é o momento de cadastrar (fazer o host) de todas as máquinas do server1 até o server5 através da aba Machines do dashboard do MaaS. Para isso algumas instruções devem ser seguidas:
 
 - Ao cadastrar as máquinas devemos preencher as opções:
    - Preencher a opção Power Type com Intel AMT
@@ -93,6 +93,8 @@ Agora é o momento de cadastrar (fazer o host) de todas as máquinas do server1 
    - IP do AMT = 172.16.15.X (sendo X o id do server, por exemplo server1 = 172.16.15.1)
 
 Em seguida, devemos checar todos os nós e verificar se estão todos com o status Ready, além de verificar também o hardware como memória, SSD etc.
+
+![](imagens/imagem_2025-03-13_220911807.png)
 
 Ainda resta um último dispositivo para cadastrar, neste caso o roteador. Adicionamos o roteador pela aba Devices do dashboard do MaaS:
 

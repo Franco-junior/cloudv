@@ -116,4 +116,6 @@ Agora vamos realizar um NAT para permitir o acesso externo "Rede Wi-fi Insper" d
 
 Também é necessário liberar o acesso ao gerenciamento remoto do roteador criando uma regra de gestão para a rede 0.0.0.0/0, na aba System Tools -> Admin Setup -> Remote Management:
 
+![](imagens/imagem_2025-03-13_222843232.png)
 
+Assim já é possível acessar remotamente sem precisar conectar o cabo Ethernet diretamente no Switch.

@@ -110,7 +110,7 @@ Devemos fazer esse procedimento para cada uma das machines da nossa nuvem.
 
 ### Tarefa 6: Fazendo acesso remoto ao kit
 
-Agora vamos realizar um NAT para permitir o acesso externo "Rede Wi-fi Insper" do computador pessoal ao servidor MAIN, a ideia é utilizar a porta 22. Além disso, temos que configurar uma porta para acessar o MaaS remotamente, usaremos a porta 5240 e configurar no roteador na aba Transmisson -> NAT:
+Agora vamos realizar um NAT para permitir o acesso da "Rede Wi-fi Insper" do computador pessoal ao servidor MAIN, a ideia é utilizar a porta 22. Além disso, temos que configurar uma porta para acessar o MaaS remotamente, usaremos a porta 5240 e configurar no roteador na aba Transmisson -> NAT:
 
 ![](imagens/imagem_2025-03-13_222737099.png)
 
@@ -121,6 +121,54 @@ Também é necessário liberar o acesso ao gerenciamento remoto do roteador cria
 Assim já é possível acessar remotamente sem precisar conectar o cabo Ethernet diretamente no Switch. Neste caso, precisamos utilizar um IP diferente disponível no dashboard do roteador na página principal em WAN IPv4 -> WAN1 -> IP Address
 
 
-### Bare Metal: Django em nuvem
+## Bare Metal: Django em nuvem
 
 Com a infra pronta agora vamos fazer deploy de uma aplicação Django. Mas antes, precisamos configurar um ajuste no DNS, dentro da aba Subnets clicar na subnet 172.16.0.0/20 e editar a Subnet summary colocando o DNS do Insper - 172.20.129.131
+
+![](imagens/imagem_2025-03-14_164227931.png)
+
+### Primeira Parte: Banco de Dados
+
+Primeiro vamos acessar o dashboard do MaaS na aba Machines e fazer deploy do ubuntu 24.04 no server1:
+
+*INSERIR IMAGEM AQUI*
+
+Em seguida acessamos o server1 pelo terminal via SSH. Primeiro acessamos a main:
+
+```
+ssh cloud@10.103.1.31
+```
+> Esse IP é para acesso remoto pela rede do Insper
+
+Depois acessamos o server1:
+
+```
+ssh ubuntu@172.16.8.196
+```
+> Esse IP é o que aparece no dashboard do MaaS na aba Machines e aparece logo abaixo do nome de cada server
+
+Agora dentro do server1 vamos dar continuidade com o bando de dados, para isso executamos os comandos:
+
+```
+sudo apt update
+sudo apt install postgresql postgresql-contrib -y
+```
+
+Ainda dentro do server1 precisamos criar um usuário:
+
+```
+sudo su - postgres
+createuser -s cloud -W #Utilizra a senha cloud
+```
+
+Agora vamos criar o database:
+
+```
+createdb -O cloud tasks
+```
+
+Agora expor o serviço para acesso:
+
+```
+nano /etc/postgresql/14/main/postgresql.conf
+```

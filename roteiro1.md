@@ -119,3 +119,8 @@ Também é necessário liberar o acesso ao gerenciamento remoto do roteador cria
 ![](imagens/imagem_2025-03-13_222843232.png)
 
 Assim já é possível acessar remotamente sem precisar conectar o cabo Ethernet diretamente no Switch. Neste caso, precisamos utilizar um IP diferente disponível no dashboard do roteador na página principal em WAN IPv4 -> WAN1 -> IP Address
+
+
+### Bare Metal: Django em nuvem
+
+Com a infra pronta agora vamos fazer deploy de uma aplicação Django. Mas antes, precisamos configurar um ajuste no DNS, dentro da aba Subnets clicar na subnet 172.16.0.0/20 e editar a Subnet summary colocando o DNS do Insper - 172.20.129.131
